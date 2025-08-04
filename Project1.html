@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="Project1.css">
+  <title></title>
+</head>
+
+<body>
+  <div id = "mainBlock">
+    <div id = "mainBlock2">
+      <img src = "/assets/03 Aug. 2025 (1).svg">
+      <h1 class="neon">MMA tracking app</h1>
+      <img src = "/assets/image.png" id = "projectPreview">
+      <h2 class="neon">Work in progress</h2>
+      <h1 id = "details"> Details</h1>
+      <h1 id ="below" class="neon">BELOW</h1>
+    </div>
+  </div>
+  <div id = "content">
+    <h1>Project overview</h1>
+    <p>
+    As someone who enjoys practicing MMA, I felt like I needed a way to make my journey more efficient. 
+As a result, I started working on this web application to track my progress and get a bigger picture of my journey as a whole.
+    </p>
+    <h1>Technical details</h1>
+    <p>
+      I had decided on a very modular structure for my project in order to facilitate the scalability, readability and management of the code.
+    </p>
+    <h2>
+      File Structure:
+    </h2>
+    <div id = "structureSnippet">
+      <pre>
+├── Assets
+│   ├── arrow.svg
+│   └── ... (and other assets)
+├── index.html
+├── main.js
+├── modules
+│   ├── cardSorter.js
+│   └── ... (and other modules)
+├── notes.txt
+├── pages
+│   ├── cardCreator.css
+│   └── ... (and other page files)
+└── style.css
+  </pre>
+    </div>
+  
+  <h2>
+    Modular JS:
+  </h2>
+  <p>
+    Each module has its own function that contributes to the architecture of the web application. For example, the cards Peter.js module sorts the cards into different categories to later be displayed by another module. In this way, the debugging process is much faster due to different problems being handled by specific files.
+  </p>
+  
+  <h2>
+    Grouped Assets:
+  </h2>
+  <p>
+    All assets are grouped into one folder. This allows us to focus on the code, making things more readable and structured.
+  </p>
+  <p id ="gitHubRepo">
+    For more details about the inner workings of the project, check the GitHub repo: <a href = "https://github.com
+    /VirtuosoEB/MMAskillTracker">https://github.com
+    /VirtuosoEB/MMAskillTracker</a>
+  </p>
+  
+  <h1>
+    What's Next?
+  </h1>
+  <p>
+    There is still a long way to go before I can call this project complete. Here is a list of things I have planned:
+<ul>
+  <li>Scroll bar displaying current category</li>
+<li>Local storage for journal feature</li>
+<li>Refining UI/UX for a better user experience</li>
+ <li>Adding final visual design elements</li>
+</ul>
+  </p>
+  <a href ="/index.html">
+    <button>
+    Return to homepage
+  </button>
+  </a>
+  
+  </div>
+</body>
+
+</html>
