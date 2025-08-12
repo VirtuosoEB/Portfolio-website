@@ -1,3 +1,4 @@
+@media(max-width: 768px){
 body{
   margin: 0;
   padding: 0;
@@ -100,4 +101,56 @@ a{
 button{
   padding: 5%;
   border-radius: 5%;
+}
+
+}
+@media(min-width: 768px){
+  body{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  background-color: #535353;
+  }
+  #mainBlock2{
+    display: grid;
+    grid-template-rows: repeat(1, 1fr);
+    grid-template-columns: repeat(2, 1fr);
+    border: solid;
+    height: 100vh;
+  }
+  #mainBlock2 >*{
+    grid-column-start: 1;
+    grid-row-start: 1;
+    margin: 10px;
+  }
+  #intro{
+    text-align: center;
+  }
+  #preview{
+    grid-column-start: 2;
+    grid-row-start: 1;
+    text-align: center;
+  }
+  img{
+    width: 80%;
+  }
+  #projectPreview{
+    height: 60vh;
+    width: 50vh;
+  }
+  .neon{
+  color: white;
+ text-shadow:
+    0 0 5px #ff3131,
+    0 0 10px #ff3131,
+    0 0 20px #ff3131,
+    0 0 40px #ff3131;
+}
+#structureSnippet{
+  margin-top: 5%;
+  background-color: #3e3f40;
+  border-radius: 5%;
+  padding: 5px;
+}
+  
 }
