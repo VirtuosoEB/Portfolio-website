@@ -1,3 +1,7 @@
+@media(max-width: 768px){
+#logoPc{
+    display: none ;
+}
 body {
     font-size: 15pt;
     background: url("assets/background1.jpg");
@@ -21,19 +25,42 @@ img{
     height: 60vh;
     background: #454444;
 }
-#slogan{
-    clip-path: polygon(40% 10%, 56% 15%, 80% 8%, 100% 15%, 100% 83%, 50% 100%, 0 83%, 0 19%, 14% 10%, 28% 15%);
-    margin-top: 5vh;
-    width: 100%;
-    height: 150vh;
+
+
+#aboutMe{
+clip-path: polygon(
+    0% 0%,
+    100% 0%,
+    100% 83%,
+    50% 100%,
+    0% 83%);
+height: 100vh;
+margin-top: -1vh;
 }
-#aboutMe {
-    clip-path: polygon(27% 20%, 42% 4%, 57% 17%, 77% 0, 100% 16%, 100% 100%, 0 100%, 0 21%, 14% 5%);
+
+#slogan{
+    clip-path: polygon(
+    0% 19%,
+    14% 0%,
+    28% 15%,
+    40% 0%,
+    56% 15%,
+    80% 0%,
+    100% 15%,
+    100% 100%,
+    0% 100%);
+height: 35vh;
+margin-top: 20vh;
+}
+
+#nextStop {
+    clip-path: polygon(27% 20%, 42% 4%, 57% 17%, 77% 0, 100% 16%, 100% 100%,0% 100%, 0 21%, 14% 5%);
     height: 50vh;
     margin-top: 20vh;
     margin-bottom: -1px;
 }
-#idk{
+
+#projects{
     height: 100vh;
     margin-top: -1px;
     clip-path: polygon(0 0, 100% 0, 100% 11%, 80% 31%, 80% 75%, 100% 100%, 0 100%, 20% 76%, 21% 32%, 0 13%);
@@ -56,6 +83,7 @@ h1{
     position: relative;
     top: 40%;
     font-size: 27px;
+    z-index: 2;
 }
 h2{
     position: relative;
@@ -69,11 +97,11 @@ h2{
 }
 #aboutMeTxt{
     position: relative;
-    top: 35%;
+    top: 20%;
 }
 p{
     position: relative;
-    top: 37%;
+    top: 25%;
     margin: 0 10%;
     z-index: 2;
 }
@@ -158,7 +186,7 @@ svg{
 }
 #gear8{
     width: 20vh;
-    top: 205vh;
+    top: 212vh;
     left: 110vw;
 }
 #gear9{
@@ -280,4 +308,120 @@ ul{
     width: 80%;
     text-align: left;
     left: 10%;
+}
+}
+
+
+@media(min-width: 768px){
+    div{
+        border-radius: 1%;
+    }
+    #container{
+      background: url("assets/background1.jpg");
+    height: 300vh;
+    font-size: 18pt;
+    background-size: cover;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(3, 1fr)
+        1fr
+        repeat(8, 1fr)
+        ;
+  }
+  div{}
+  .normalDiv{
+    background: #a6a6a6;
+}
+  
+  #intro{
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 6;
+    background-color: #454444;
+  }
+  #intro >*{
+      background-color: #454444;
+  }
+  #logoPc{
+      width: 40%;
+      margin: 6px;
+  }
+  
+  #aboutMe{
+      grid-column-start: 2;
+      grid-column-end: 3;
+      grid-row-start: 1;
+      grid-row-end: 5;
+      text-align: center;
+  }
+  #aboutMe h1{
+      margin-top: 1%;
+      margin-bottom: 0%;
+  }
+  #aMParagraph{
+      margin-top: 0%;
+  }
+  #nextStop{
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 5;
+    grid-row-end: 6;
+    text-align:center;
+  }
+  #projects{
+    grid-column-start: 1;
+    grid-column-end: 3 ;
+    grid-row-start: 7;
+    grid-row-end: 11;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  h1 {
+    font-size: 36px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+
+  ul {
+    font-size: 18px;
+    width: 60%;
+  }
+
+  img {
+    width: 40%;
+    margin-left: 30%;
+    margin-top: 5%;
+  }
+  #project1C{
+    grid-column-start: 2;
+    
+  }
+  #skills{
+      grid-row-start: 12;
+  }
+  #contactMe{
+      grid-row-start: 12;
+  }
+  
+  .gears{display: none;}
+  .mGears{display: none;}
+  .clouds{display: none;}
+  #logo{display: none;}
+  
+  
+  .neon{
+ color: white;
+ font-size: 32px;
+ text-shadow:
+    0 0 5px #00df24,
+    0 0 10px #00df24,
+    0 0 20px #00df24,
+    0 0 40px #00df24;
+}
+
 }
