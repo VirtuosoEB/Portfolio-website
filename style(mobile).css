@@ -1,0 +1,79 @@
+body{
+    background-color: #0a0a0a;
+    background: url("background(mobile).png");
+    background-repeat: no-repeat;      /* stops tiling */
+    background-size: cover;            /* fills the screen nicely */
+    background-position: center;       /* keeps it centered */
+    background-attachment: fixed;
+}
+
+section{
+    width: 100%;
+}
+
+h1, h2, h3, p, li{
+    color: white;
+    font-family: 'Poppins', sans-serif;
+}
+
+h1{font-size: 40px;}
+h2{font-size: 36px;}
+p{font-size: 20px;}
+
+.seperator{
+    margin: 60px 0px 60px 10%;
+    width: 80%;
+    height: 2.5px;
+    background-color: #00ff00;
+}
+.green{
+    color:#00ff00
+}
+
+#logo{
+    width: 40%;
+}
+
+
+button {
+  font-size: 16px;
+  font-weight: 500;
+  padding: 12px 24px;
+  height: 44px;
+  border-radius: 8px;
+  margin:16px 0px 0px 0px;
+  border: none;
+  background-color: #00ff00;
+  color: black;
+}
+
+#view-projects-btn {
+  transition: all 0.3s ease;
+  box-shadow: 0 0 0px rgba(0, 255, 0, 0);
+}
+
+#view-projects-btn:hover {
+  transform: translateY(-3px); /* Lifts the button slightly */
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.6); /* Adds a neon glow */
+  filter: brightness(1.2);
+}
+
+.projectDisplay img{
+    display: none;
+}
+
+.skill{
+    width: 30%;
+    aspect-ratio: 1/1;
+    background-color: grey;
+    margin: 5px;
+    text-align: center;
+}
+.skill img{
+    width: 40%;
+    margin-top: 10px;
+}
+
+#benefitContainer img{
+    width: 20%;
+}

@@ -1,112 +1,133 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style(mobile).css" media="(max-width: 768px)">
+  <link rel="stylesheet" href="style.css" media="(min-width: 769px)">
 
-  <title>Elijah Bienvenue|Portfolio</title>
-  
-  <!-- HTML -->
-  
-
-  <!-- Custom Styles -->
-  <link rel="stylesheet" href="style.css">
+    <title>Document</title>
 </head>
-
 <body>
-  
-  <div id = "container">
-    <div id = "gear1" class ="gears"></div>
-  <div id = "gear2" class = "gears"></div>
-  <div id="gear3" class="gears"></div>
-  <div id="gear4" class="mGears"></div>
-  <div id="gear5" class = "mGears"></div>
-  <div id ="gear6" class = "mGears"></div>
-  <div id ="gear7" class="mGears"></div>
-  <div id = "gear8" class ="mGears"></div>
-  <div id = "gear9" class ="mGears"></div>
-  <div id = "gear10" class ="mGears"></div>
-  <div id = "gear11" class ="mGears"></div>
-  <div id = "gear12" class ="mGears"></div>
-  <div id = "gear13" class ="mGears"></div>
-  <div id = "gear14" class ="mGears"></div>
-  <div id = "gear15" class ="mGears"></div>
-  <div id = "gear16" class ="mGears"></div>
-  <div id = "gear17" class ="mGears"></div>
-  <div id = "gear18" class ="mGears"></div>
-  <div id = "gear19" class ="mGears"></div>
+    <section>
+        <img src="logo.png" id="logo">
+        <h1>Hey, I'm <span class="green">Elijah <br>Bienvenue.</span></h1>
+        <h2 id="slogan">"Lets forge a <br>digital <br>experience"</h2>
+        <button id="view-projects-btn"><a href="#projects">View Projects</a></button>
+    </section>
 
-  <div id = "cloud1" class="clouds"></div>
-  <div id = "cloud2" class="clouds"></div>
-  <div id = "cloud3" class="clouds"></div>
-  <div id = "cloud4" class="clouds"></div>
-  <div id = "intro">
-    <div id = "heading" class = "normalDiv">
-      <h1 class="neon">
-        Elijah Bienvenue
-      </h1>
-      <img id="logo" src ="assets/logo.svg">
-      <img id ="logoPc" src = "assets/logoPc.svg">
-      <h2 class="neon">
-        Portfolio
-      </h2>
-    </div>
-  
-    <div id = "slogan" class = "normalDiv">
-      <h1 id = "sloganTxt" class="neon">
-        Forge a digital experience
-      </h1>
-    </div>
-  </div>
-  
-  <div id ="aboutMe" class="normalDiv">
-    <h1 id = "aboutMeTxt"> About Me </h1>
-    <p id="aMParagraph">
-      Hey! I'm Elijah, a web developer with multiple hobbies and a deep curiosity. I'd like to welcome you on my journey in web dev. If you're interested, you're free to check my projects, and contact me if you'd like some work done. From there, just sit back, relax, and enjoy the show.
-    </p>
-  </div>
-  
-  <div id = "nextStop" class = "normalDiv"><h1 class="neon">
-    NEXT STOP!<br>PROJECTS
-  </h1></div>
-  
-  <div id = "projects" class = "normalDiv">
-    <h1 id = "ProjectsH1">
-    Projects
-  </h1>
-  <div id="Project1C">
-    <a href = "Project1.html">
-      <img id = "project" src = "assets/projectCard.png">
-    </a>
-  </div>
-  </div>
-  
-  <div id = "skills" class= "normalDiv"><h1 id = "skillsH1">
-    Skills
-  </h1>
-  <ul>
-    <li>
-      JavaScript
-    </li>
-    <li>
-      CSS
-    </li>
-    <li>
-      HTML
-    </li>
-  </ul>
-  </div>
-  
-  <div id = "contactMe" class="normalDiv">
-    <h1 class="neon">
-    Contact me
-    </h1> <p>
-    bienvenueelijah@gmail.com|<br>263-288-8334
-  </p></div>
-  </div>
+    <div class="seperator"></div>
 
-  <!-- Project -->
-  <script src="main.js"></script>
+    <section id="aboutMe">
+        <h2>About Me</h2>
+        <p>"Hello! I'm Elijah Bienvenue, a dedicated front-<br>
+            end developer with a deep curiosity for all things <br>
+            web. I thrive on bringing designs to life, from <br>
+            pixel-perfect layouts to dynamic user interfaces. <br>
+            My primary focus is on building clean, <br>
+            performant, and maintainable code. When I'm <br>
+            not coding, I'm usually exploring new <br>
+            technologies to continuously improve my skills <br>
+            and stay at the forefront of web development."</p>
+    </section>
+
+    <div class="seperator"></div>
+
+    <section id="skillSection">
+        <h2>Skills</h2>
+        <div id="skillContainer">
+            <div class="skill"><img src="css.png"><h3>CSS</h3></div>
+            <div class="skill"><img src="javascript.png"><h3>Javascript</h3></div>
+            <div class="skill"><img src="html.png"><h3>HTML</h3></div>
+        </div>
+    </section>
+
+    <div class="seperator"></div>
+
+    <section id="benefitSection">
+        <h2>Why work with me?</h2>
+        <div id="benefitContainer">
+            <div class="benefit">
+                <img src="lego.png"> <h3>Built for growth from day one</h3>
+                <p>Working with me ensures that your website will be designed with your growth in mind.</p>
+            </div>
+
+            <div class="benefit">
+                <img src="promotion.png"><h3>Clear, reliable collaboration</h3>
+                <p>During the process of making the website, you will be updated on progress and be asked feedback on key decisions.</p>
+            </div>
+
+            <div class="benefit">
+                <img src="key.png"><h3>Your website, fully in your control</h3>
+                <p>I hand you the keys to your site by giving you the power to edit it without ever touching any code.</p>
+            </div>
+        </div>
+    </section>
+
+    <div class="seperator"></div>
+
+    <section id="projects">
+        <h2>Projects</h2>
+        <div class="project">
+            <div class="projectInfo">
+                <h3 class="pTitle">Fake landing page</h3>
+                <ul>
+                    <li>UI layout</li>
+                    <li>Visual Hierarchy</li>
+                    <li>Responsiveness</li>
+                </ul>
+            </div>
+
+            <div class="projectDisplay">
+                <div class="secLine"></div>
+                <div class="primLine"></div>
+                <img src="screenshot1.png" id="screenshot1">
+                <div class="primLine"></div>
+                <div class="secLine"></div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="projectInfo">
+                <h3 class="pTitle">Custom cms</h3>
+                <ul>
+                    <li>Dynamic content management</li>
+                    <li>Scalable architecture</li>
+                    <li>Modular data structure</li>
+                </ul>
+            </div>
+
+            <div class="projectDisplay">
+                <div class="secLine"></div>
+                <div class="primLine"></div>
+                <img src="screenshot2.png" id="screenshot2">
+                <div class="primLine"></div>
+                <div class="secLine"></div>
+            </div>
+        </div>
+
+        <div class="project">
+            <div class="projectInfo">
+                <h3 id="p3Title">MMA tracking web app (in progress)</h3>
+                <ul>
+                    <li>Dynamic content management</li>
+                    <li>Scalable architecture</li>
+                    <li>Modular data structure</li>
+                </ul>
+            </div>
+
+            <div class="projectDisplay">
+                <div class="secLinep3"></div>
+                <div class="primLinep3"></div>
+                <img src="Mma.png" id="screenshot3">
+                <div class="primLinep3"></div>
+                <div class="secLinep3"></div>
+            </div>
+        </div>
+
+        <h2><span class="green">Contact</span> me</h2>
+        <p id="contactInfo">bienvenueelijah@gmail.com</p>
+    </section>
+
 </body>
 </html>
