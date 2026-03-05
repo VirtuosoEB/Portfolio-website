@@ -55,12 +55,12 @@ a{
     color: black;
 }
 
-#view-projects-btn {
+.view-projects-btn {
   transition: all 0.3s ease;
   box-shadow: 0 0 0px rgba(0, 255, 0, 0);
 }
 
-#view-projects-btn:hover {
+.view-projects-btn:hover {
   transform: translateY(-3px); /* Lifts the button slightly */
   box-shadow: 0 0 15px rgba(0, 255, 0, 0.6); /* Adds a neon glow */
   filter: brightness(1.2);
