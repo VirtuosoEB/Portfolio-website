@@ -82,3 +82,5 @@ a{
 #benefitContainer img{
     width: 20%;
 }
+
+#aboutMe br{display: none;}
