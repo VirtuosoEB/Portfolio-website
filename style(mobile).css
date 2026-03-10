@@ -5,11 +5,11 @@ body{
     background-size: cover;            /* fills the screen nicely */
     background-position: center;       /* keeps it centered */
     background-attachment: fixed;
+    margin: 1.5rem;
 }
 
 section{
-    width: 80%;
-    padding-left: 20px;
+    width: 100%;
 }
 
 h1, h2, h3, p, li{
