@@ -10,17 +10,20 @@
 </head>
 <body>
     <section>
-        <img src="logo.png" id="logo">
-        <h1>Hey, I'm <span class="green">Elijah <br>Bienvenue.</span></h1>
-        <h2 id="slogan">"Lets forge a <br>digital <br>experience"</h2>
-        <button class="view-projects-btn"><a href="#projects">View Projects</a></button>
+        <div id="profileImagesContainer">
+            <img src="logo.png" id="logo">
+            <div id="meContainer"><img src="me.png" id="profilePicture"></div>
+        </div>
+        <h1 class="fade-in">Hey, I'm <span class="green">Elijah <br>Bienvenue.</span></h1>
+        <h2 id="slogan" class="fade-in">"Lets forge a <br>digital <br>experience"</h2>
+        <button class="view-projects-btn fade-in"><a href="#projects">View Projects</a></button>
     </section>
 
     <div class="seperator"></div>
 
     <section id="aboutMe">
-        <h2>About Me</h2>
-        <p>I’m Elijah, a web developer passionate about <br>
+        <h2 class="fade-in">About Me</h2>
+        <p class="fade-in">I’m Elijah, a web developer passionate about <br>
             building clean, functional,and visually striking <br>
             websites. I specialize in creating sites that are <br>
             easy to manage, adaptable, and designed to <br>
@@ -35,30 +38,30 @@
     <div class="seperator"></div>
 
     <section id="skillSection">
-        <h2>Skills</h2>
+        <h2 class="fade-in">Skills</h2>
         <div id="skillContainer">
-            <div class="skill"><img src="css.png"><h3>CSS</h3></div>
-            <div class="skill"><img src="javascript.png"><h3>Javascript</h3></div>
-            <div class="skill"><img src="html.png"><h3>HTML</h3></div>
+            <div class="skill fade-in"><img src="css.png"><h3>CSS</h3></div>
+            <div class="skill fade-in"><img src="javascript.png"><h3>Javascript</h3></div>
+            <div class="skill fade-in"><img src="html.png"><h3>HTML</h3></div>
         </div>
     </section>
 
     <div class="seperator"></div>
 
     <section id="benefitSection">
-        <h2>Why work with me?</h2>
+        <h2 class="fade-in">Why work with me?</h2>
         <div id="benefitContainer">
-            <div class="benefit">
+            <div class="benefit fade-in">
                 <img src="lego.png"> <h3>Built for growth from day one</h3>
                 <p>Each website is designed to help attract clients, showcase your work and build your empire in the digital world.</p>
             </div>
 
-            <div class="benefit">
+            <div class="benefit fade-in">
                 <img src="promotion.png"><h3>Clear, reliable collaboration</h3>
                 <p>During the process of making the website, you will be updated on progress and be asked feedback on key decisions.</p>
             </div>
 
-            <div class="benefit">
+            <div class="benefit fade-in">
                 <img src="key.png"><h3>Your website, fully in your control</h3>
                 <p>I hand you the keys to your site by giving you the power to edit it without ever touching any code.</p>
             </div>
@@ -70,7 +73,7 @@
     <section id="projects">
         <h2>Projects</h2>
         <div class="project">
-            <div class="projectInfo">
+            <div class="projectInfo fade-in">
                 <h3 class="pTitle">Fake landing page</h3>
                 <ul>
                     <li>UI layout</li>
@@ -80,7 +83,7 @@
                 <button class="view-projects-btn"><a href="https://virtuosoeb.github.io/FakeLandingPage/">Check it out!</a></button>
             </div>
 
-            <div class="projectDisplay">
+            <div class="projectDisplay fade-in">
                 <div class="secLine"></div>
                 <div class="primLine"></div>
                 <img src="screenshot1.png" id="screenshot1">
@@ -90,7 +93,7 @@
         </div>
 
         <div class="project">
-            <div class="projectInfo">
+            <div class="projectInfo fade-in">
                 <h3 class="pTitle">Custom cms</h3>
                 <ul>
                     <li>Dynamic content management</li>
@@ -100,7 +103,7 @@
                 <button class="view-projects-btn"><a href="https://virtuosoeb.github.io/FakeLandingPage-dashboard-/">Check it out!</a></button>
             </div>
 
-            <div class="projectDisplay">
+            <div class="projectDisplay fade-in">
                 <div class="secLine"></div>
                 <div class="primLine"></div>
                 <img src="Screenshot2.png" id="screenshot2">
@@ -110,7 +113,7 @@
         </div>
 
         <div class="project">
-            <div class="projectInfo">
+            <div class="projectInfo fade-in">
                 <h3 class="pTitle">Thought writing web app</h3>
                 <ul>
                     <li>Made with React</li>
@@ -120,7 +123,7 @@
                 <button class="view-projects-btn"><a href="https://virtuosoeb.github.io/First-React-Project2/">Check it out!</a></button>
             </div>
 
-            <div class="projectDisplay">
+            <div class="projectDisplay fade-in">
                 <div class="secLine"></div>
                 <div class="primLine"></div>
                 <img src="screenshot3.png" id="screenshot1">
@@ -130,7 +133,7 @@
         </div>
 
         <div class="project">
-            <div class="projectInfo">
+            <div class="projectInfo fade-in">
                 <h3 id="p3Title">MMA tracking web app (in progress)</h3>
                 <ul>
                     <li>Dynamic content management</li>
@@ -140,7 +143,7 @@
 
             </div>
 
-            <div class="projectDisplay">
+            <div class="projectDisplay fade-in">
                 <div class="secLinep3"></div>
                 <div class="primLinep3"></div>
                 <img src="Mma.png" id="screenshot3">
@@ -151,9 +154,9 @@
 
         
 
-        <h2><span class="green">Contact</span> me</h2>
-        <p id="contactInfo">bienvenueelijah@gmail.com</p>
+        <h2><span class="green fade-in">Contact</span> me</h2>
+        <p id="contactInfo" class="fade-in">bienvenueelijah@gmail.com</p>
     </section>
-
+    <script src ="main.js"></script>
 </body>
 </html>
