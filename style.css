@@ -1,12 +1,31 @@
 body{
     background-color: #0a0a0a;
-    background: url("background.png");
-    background-repeat: no-repeat;      /* stops tiling */
-    background-size: cover;            /* fills the screen nicely */
-    background-position: center;       /* keeps it centered */
-    background-attachment: fixed;
     background-size: 100vw 100vh;
 }
+
+#bgContainer {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  z-index: -1;
+}
+
+#bgContainer img {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+
+  opacity: 0;
+  transition: opacity 1.2s ease-in-out;
+}
+
+#bgContainer img.active {
+  opacity: 1;
+}
+
 section{
     width: 100%;
     height: 100vh;
@@ -21,7 +40,7 @@ section{
     color:#00ff00
 }
 
-h1, h2, h3, p, li{
+h1, h2, h3, h4, p, li{
     color: white;
     font-family: 'Poppins', sans-serif;
 }
@@ -33,7 +52,16 @@ h1{
 h2{
     font-size: 36px;
 }
-
+#heroContainer{
+    width: 50%;
+    background-color: rgba(20, 20, 20, 0.7);
+    width: 50%;
+    height: 75%;
+    margin-top: 5%;
+    padding-top: 5%;
+    margin-left: 20px;
+    border-radius: 20px;
+}
 #slogan{
     font-size: 36px;
     margin: 40px 0px 20px 50px;
@@ -57,39 +85,45 @@ a{
 
 .view-projects-btn {
   transition: all 0.3s ease;
-  box-shadow: 0 0 0px rgba(0, 255, 0, 0);
+  box-shadow: 0 0 15px rgba(0, 255, 0, 0.6);
 }
 
 .view-projects-btn:hover {
   transform: translateY(-3px); /* Lifts the button slightly */
-  box-shadow: 0 0 15px rgba(0, 255, 0, 0.6); /* Adds a neon glow */
+  box-shadow: 0 0 30px rgba(0, 255, 0, 0.6); /* Adds a neon glow */
   filter: brightness(1.2);
 }
 
 #logo{
     position: absolute;
+    width: 30%;
     left: 60%;
     top: 15%;
-}
-#profileImagesContainer{
-    margin: 20px 0px 0px 50px;
-}
-#meContainer{
-    width: 100px;
-    aspect-ratio: 1/1;
-    overflow: hidden;
-    text-align: center;
-    border-radius: 50%;
-    border: solid #00ff00;
-}
-#profilePicture{
-    width:80%;
 }
 
 #aboutMe{
     width: 100%;
     height: 100vh;
+    text-align: left;
+    font-size: 20px;
+    position: relative;
+}
+#imgContainer{
+    position: absolute;
+    left: 70%;
+    top: 32%;
+    border-radius: 50%;
+    width: 20%;
+    aspect-ratio: 1/1;
+    overflow: hidden;
     text-align: center;
+    border: solid #00ff00;
+}
+#imgContainer img{
+    width: 80%;
+}
+#aboutMe h3, #aboutMe h4, #aboutMe p{
+    margin-left: 50px;
 }
 #aboutMe h2{
     font-size: 36px;
@@ -98,20 +132,42 @@ a{
 #aboutMe h3{
     font-size: 26px;
 }
+#aboutMe p{
+    line-height: 1.4;
+}
 #skillSection{
-    text-align: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    overflow: hidden;
 }
 #skillContainer{
-    width: 100%;
+    width: 70%;
+    margin-top: 50px;
     display: flex;
-    justify-content: center;
-    gap: 100px;
+    gap: 50px;
+    animation: scrollSkills 20s linear infinite;
 }
+
 .skill{
-    width: 15%;
+    min-width: 200px;
     aspect-ratio: 1/1.5;
-    background-color: grey;
+    background: #111;
+    border-radius: 12px;
+    font-size: 1.2rem;
+    scroll-snap-align: center;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.7);
 }
+@keyframes scrollSkills {
+  from {
+    transform: translateX(0);
+  }
+  to {
+    transform: translateX(-50%);
+  }
+}
+
 .skill img{
     margin-top: 20px;
     width: 40%;
@@ -165,7 +221,17 @@ a{
     flex-direction: column;
     align-items: center;
 }
-
+.viewCaseStudy{
+    background-color: rgba(20, 20, 20, 0.7);
+    border:solid white;
+    color: white;
+    transition: all 0.3s ease;
+}
+.viewCaseStudy:hover{
+    transform: translateY(-3px); /* Lifts the button slightly */
+    box-shadow: 0 0 30px rgba(255, 255, 255, 0.724); /* Adds a neon glow */
+    filter: brightness(1.2);
+}
 .primLine{
     margin-bottom: 20px;
     margin-top: 20px;
@@ -198,6 +264,38 @@ a{
     width: 200px;
     opacity: 0.5;
 }
+.caseStudy{
+    padding-left: 50px;
+    width: 80%;
+    height: 80%;
+    position: fixed;
+    left: 10%;
+    top: 10%;
+    background-color: #111;
+    border-radius: 20px;
+    box-shadow: 0 0 15px rgba(0, 255, 0, 1);
+    z-index: 1;
+    display: none;
+}
+.caseStudy button{
+    background: red;
+    position: absolute;
+    right: 2.5%;
+    top: 2.5%;
+    width: 50px;
+    aspect-ratio: 1/1;
+    border-radius: 20px;
+}
+.caseStudy h2{
+    font-size: 36px;
+    text-align: center;
+}
+.caseStudy h3{
+    font-size: 26px;
+}
+.caseStudy p{
+    line-height: 1.4;
+}
 #contactInfo{
     font-size: 20px;
 }
@@ -211,4 +309,10 @@ a{
 .fade-in.show {
   opacity: 1;
   transform: translateY(0);
+}
+
+.mobileBr{display: none;}
+
+#ContactBtn{
+    margin: auto;
 }

@@ -9,29 +9,47 @@
     <title>Document</title>
 </head>
 <body>
+    <div id="bgContainer">
+        <img src="backgrounds\heroBg.png" class="active">
+        <img src="backgrounds\aboutMeBg.png">
+        <img src="backgrounds\skillBg.png">
+        <img src="backgrounds\benefitsBg.png">
+        <img src="backgrounds\projectsBg.png">
+    </div>
     <section>
-        <div id="profileImagesContainer">
-            <img src="logo.png" id="logo">
-            <div id="meContainer"><img src="me.png" id="profilePicture"></div>
+        <img src="logo.png" id="logo">
+        <div id="heroContainer">
+            <h1 class="fade-in">Hey, I'm <span class="green">Elijah <br>Bienvenue.</span></h1>
+            <h2 id="slogan" class="fade-in">"Lets forge a <br>digital <br class="mobileBr">experience"</h2>
+            <button class="view-projects-btn fade-in"><a href="#projects">View Projects</a></button>
         </div>
-        <h1 class="fade-in">Hey, I'm <span class="green">Elijah <br>Bienvenue.</span></h1>
-        <h2 id="slogan" class="fade-in">"Lets forge a <br>digital <br>experience"</h2>
-        <button class="view-projects-btn fade-in"><a href="#projects">View Projects</a></button>
+        
     </section>
 
     <div class="seperator"></div>
 
     <section id="aboutMe">
         <h2 class="fade-in">About Me</h2>
-        <p class="fade-in">I’m Elijah, a web developer passionate about <br>
-            building clean, functional,and visually striking <br>
-            websites. I specialize in creating sites that are <br>
-            easy to manage, adaptable, and designed to <br>
-            help businesses or creators build or upgrade <br>
-            their online presence. Whether it’s a custom <br>
-            CMS, a portfolio, or a small business site, I turn <br>
-            ideas into digital solutions that work. Let’s bring <br>
-            your vision to life.
+        <div id="imgContainer"><img src="me.png"></div>
+        <h3 class="fade-in">Hey, I’m Elijah — I solve problems through coding.</h3>
+        <p class="fade-in">
+            I’m a software developer with a knack for picking things apart—whether it’s a messy <br>
+            webpage or a friend’s unpredictable Tuesday habits. My journey started with one <br>
+            question: “Can I learn to code on my phone?” The answer was yes… mostly. A laptop <br>
+            definitely helps, but that first step was pure phone power.
+        </p>
+        <h4 class="fade-in">What I do:</h4>
+        <p class="fade-in">
+            I turn ideas into clean, functional, and striking web experiences. From small business <br>
+            sites to custom CMS setups, I help brands level up their digital presence. I love the <br>
+            "puzzle" aspect of development—debugging, problem-solving, and making complex <br>
+            systems feel simple.
+        </p>
+        <h4 class="fade-in">Beyond the screen:</h4>
+        <p class="fade-in">
+            When I'm not coding, I’m usually training in MMA, Muay Thai, or grappling. I’m also big on <br>
+            improv and singing. I believe that a diverse life outside of tech makes me a more <br>
+            adaptable, creative developer.
         </p>
     </section>
 
@@ -43,6 +61,9 @@
             <div class="skill fade-in"><img src="css.png"><h3>CSS</h3></div>
             <div class="skill fade-in"><img src="javascript.png"><h3>Javascript</h3></div>
             <div class="skill fade-in"><img src="html.png"><h3>HTML</h3></div>
+            <div class="skill fade-in"><img src="react.png"><h3>React</h3></div>
+            <div class="skill fade-in"><img src="puzzle.png"><h3>Problem solving</h3></div>
+            <div class="skill fade-in"><img src="chat.png"><h3>Communication</h3></div>
         </div>
     </section>
 
@@ -81,6 +102,7 @@
                     <li>Responsiveness</li>
                 </ul>
                 <button class="view-projects-btn"><a href="https://virtuosoeb.github.io/FakeLandingPage/">Check it out!</a></button>
+                <button class="viewCaseStudy">Details</button>
             </div>
 
             <div class="projectDisplay fade-in">
@@ -101,6 +123,7 @@
                     <li>Modular data structure</li>
                 </ul>
                 <button class="view-projects-btn"><a href="https://virtuosoeb.github.io/FakeLandingPage-dashboard-/">Check it out!</a></button>
+                <button class="viewCaseStudy">Details</button>
             </div>
 
             <div class="projectDisplay fade-in">
@@ -109,6 +132,25 @@
                 <img src="Screenshot2.png" id="screenshot2">
                 <div class="primLine"></div>
                 <div class="secLine"></div>
+            </div>
+
+            <div class="caseStudy">
+                <h3>A high-fidelity, themed landing page designed with a "biotech" aesthetic</h3>
+                <h4>Challenge:</h4>
+                <p>Creating a dark, edgy, yet professional look that remains readable and accessible.</p>
+                <h4>Key Technical Point:</h4>
+                <p>
+                    When designing the landing page, I made two separate style sheets to ensure <br>
+                    responsiveness across mobile and desktop. Additionally, I added a few details to the <br>
+                    desktop version to take advantage of the extra space. When choosing the colors, I <br>
+                    wanted to give a futuristic yet professional and trust invoking aesthetic.
+                </p>
+                <h4>Result:</h4>
+                <p>
+                    A clean, responsive website, with careful design decisions to ensure everything looks <br>
+                    aesthetically pleasing, clear and structured.
+                </p>
+                <button>X</button>
             </div>
         </div>
 
@@ -121,6 +163,7 @@
                     <li>Dynamic interactions</li>
                 </ul>
                 <button class="view-projects-btn"><a href="https://virtuosoeb.github.io/First-React-Project2/">Check it out!</a></button>
+                <button class="viewCaseStudy">Details</button>
             </div>
 
             <div class="projectDisplay fade-in">
@@ -129,6 +172,29 @@
                 <img src="screenshot3.png" id="screenshot1">
                 <div class="primLine"></div>
                 <div class="secLine"></div>
+            </div>
+
+            <div class="caseStudy">
+                <h3>
+                    A custom-built tool allowing non-technical users to update site content <br>
+                    without touching a line of code.
+                </h3>
+                <h4>Challenge:</h4>
+                <p>
+                    Giving the opportunity for clients to quickly edit the content of their page like colors and text <br>
+                    without the need to contact the developer.
+                </p>
+                <h4>Key Technical Point:</h4>
+                <p>
+                    When you click an element on the preview page, the web app gives you the option to edit the <br>
+                    text, and color of said element. Once you click confirm on your changes, the web app saves <br>
+                    said changes into a list of individual changes to the webpage. Once the user clicks on the save <br>
+                    button, the local changes from the web app gets saved to a database that is later called as a list <br>
+                    of changes when entering the landing page.
+                </p>
+                <h4>Result:</h4>
+                <p>A web app where the user can save time to make quick, simple edits to their page.</p>
+                <button>X</button>
             </div>
         </div>
 
@@ -150,13 +216,35 @@
                 <div class="primLinep3"></div>
                 <div class="secLinep3"></div>
             </div>
+
+            <div class="caseStudy">
+                <h3>Transitioning from vanilla JavaScript to component-based architecture.</h3>
+                <h4>Challenge:</h4>
+                <p>Managing state and understanding the lifecycle of a React component for the first time.</p>
+                <h4>Key Technical Point:</h4>
+                <p>
+                    While working on this project, I took the time to learn how to make dynamic updates to the page <br>
+                    through UseState which is to handle user interactions within inputs and useEffect which handles <br>
+                    event listeners, ensuring that functions run precisely when they need to.
+                </p>
+                <h4>Result:</h4>
+                <p>
+                    A neat, simple introduction into the react framework, allowing me to build more efficiently.
+                </p>
+                <button>X</button>
+            </div>
         </div>
 
         
 
         <h2><span class="green fade-in">Contact</span> me</h2>
-        <p id="contactInfo" class="fade-in">bienvenueelijah@gmail.com</p>
+        <button id="ContactBtn"><a href="https://calendly.com/bienvenueelijah">Book a meeting!</a></button>
     </section>
+    <!-- Calendly badge widget begin -->
+    <link href="https://assets.calendly.com/assets/external/widget.css" rel="stylesheet">
+    <script src="https://assets.calendly.com/assets/external/widget.js" type="text/javascript" async></script>
+    <script type="text/javascript">window.onload = function() { Calendly.initBadgeWidget({ url: 'https://calendly.com/bienvenueelijah?hide_landing_page_details=1&hide_gdpr_banner=1', text: 'Book a meeting', color: '#00ff00', textColor: '#000000', branding: true }); }</script>
+    <!-- Calendly badge widget end -->
     <script src ="main.js"></script>
 </body>
 </html>
