@@ -148,3 +148,39 @@ a{
 }
 
 #bgContainer, .projectDisplay img{display: none;}
+.calendlyWrapper {
+    width: 100%;
+    max-width: 1000px;
+    height: 720px;
+
+    border-radius: 20px;
+    overflow: hidden;
+
+    background: rgba(0, 0, 0, 0.6);
+    backdrop-filter: blur(12px);
+
+    border: 1px solid rgba(0, 255, 0, 0.2);
+
+    box-shadow: 
+        0 0 25px rgba(0, 255, 0, 0.08),
+        inset 0 0 15px rgba(0, 255, 0, 0.05);
+
+    position: relative;
+}
+
+/* Subtle glowing edge */
+.calendlyWrapper::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border-radius: 20px;
+    pointer-events: none;
+
+    box-shadow: 0 0 40px rgba(0, 255, 0, 0.15);
+}
+
+/* Calendly iframe container */
+.calendly-inline-widget {
+    width: 100%;
+    height: 100%;
+}
