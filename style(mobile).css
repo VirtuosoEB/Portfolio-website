@@ -124,11 +124,12 @@ a{
     box-shadow: 0 0 15px rgba(0, 255, 0, 1);
     z-index: 1;
     display: none;
+    overflow-y: scroll;
 }
 
 .caseStudy button{
     background: red;
-    position: absolute;
+    position: fixed;
     right: 2.5%;
     bottom: 2.5%;
     width: 10px;
