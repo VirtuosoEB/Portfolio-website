@@ -170,6 +170,11 @@ a{
 }
 
 /* Subtle glowing edge */
+#cTA{
+    text-align: center;
+    padding: 40px 20px;
+    line-height: 1.4;
+}
 .calendlyWrapper::before {
     content: "";
     position: absolute;

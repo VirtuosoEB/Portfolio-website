@@ -314,6 +314,10 @@ a{
 }
 
 .mobileBr{display: none;}
+#cTA{
+    text-align: center;
+    max-width:800px;
+}
 
 #ContactBtn{
     margin: auto;
