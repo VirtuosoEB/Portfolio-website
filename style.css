@@ -258,7 +258,7 @@ a{
     background-color: #fffc00;
 }
 
-#screenshot1, #screenshot2{
+#screenshot1, #screenshot2, #screenshot4{
     width: 550px;
 }
 #screenshot3{
@@ -297,6 +297,7 @@ a{
 }
 .caseStudy p{
     line-height: 1.4;
+    width: 80%;
 }
 #contactInfo{
     font-size: 20px;
