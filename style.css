@@ -198,30 +198,33 @@ a{
 }
 .project{
     display: flex;
+    flex-direction: column;
+    width: 50%;
+    padding: 30px;
+    margin: 0 auto;
     gap: 40px;
     margin-bottom: 100px;
+    background-color: rgba(20, 20, 20, 0.7);
+    border-radius: 50px;
+    border: solid black 5px;
 }
-.projectInfo{
-    width: 25%;
-    margin-right: 100px;
+
+.pBtns{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
 }
+
 .pTitle{
     font-size: 26px;
-    text-decoration: underline dashed #00ff00;
-    text-underline-offset: 10px;
-}
-#p3Title{
-    font-size: 26px;
-    text-decoration: underline dashed #fffc00;
+    width: 70%;
+    margin: 0 auto;
+    text-align: center;
     text-underline-offset: 10px;
 }
 
-.projectInfo li{font-size: 20px;}
-.projectDisplay{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
+
 .viewCaseStudy{
     background-color: rgba(20, 20, 20, 0.7);
     border:solid white;
@@ -260,8 +263,11 @@ a{
 
 #screenshot1, #screenshot2, #screenshot4{
     width: 550px;
+    margin: 0 auto;
+    border-radius: 20px;
 }
 #screenshot3{
+    margin: 0 auto;
     width: 200px;
     opacity: 0.5;
 }
