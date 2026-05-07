@@ -110,7 +110,19 @@ a{
   transform: translateY(0);
 }
 
-
+.project{
+    width: 60%;
+    margin: auto;
+    padding: 5px;
+    text-align: center;
+    background-color: rgba(20, 20, 20, 0.7);
+    box-shadow: 0 0 30px rgba(0, 255, 0, 0.6);
+    border-radius: 20px;
+    margin-bottom: 20px;
+}
+.project img{
+    width: 80%;
+}
 
 .caseStudy{
     padding-left: 10px;
