@@ -261,15 +261,10 @@ a{
     background-color: #fffc00;
 }
 
-#screenshot1, #screenshot2, #screenshot4{
+#screenshot1, #screenshot2, #screenshot4, #screenshot3{
     width: 550px;
     margin: 0 auto;
     border-radius: 20px;
-}
-#screenshot3{
-    margin: 0 auto;
-    width: 200px;
-    opacity: 0.5;
 }
 .caseStudy{
     padding-left: 50px;
